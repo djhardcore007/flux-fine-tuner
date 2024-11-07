@@ -288,7 +288,7 @@ class Predictor(BasePredictor):
         ),
         disable_safety_checker: bool = Input(
             description="Disable safety checker for generated images.",
-            default=False,
+            default=True,
         ),
     ) -> List[Path]:
         """Run a single prediction on the model"""
